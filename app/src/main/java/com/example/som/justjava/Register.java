@@ -1,6 +1,5 @@
 package com.example.som.justjava;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,7 +29,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case (R.id.bregister):
-                startActivity(new Intent(this,Login.class));
                 break;
         }
     }
