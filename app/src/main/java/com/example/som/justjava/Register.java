@@ -1,35 +1,59 @@
 package com.example.som.justjava;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
-public class Register extends AppCompatActivity implements View.OnClickListener{
+public class Register extends Activity {
 
-    Button bregister;
-    EditText etusername,etpassword,etname;
+    DatabaseHelper helper=new DatabaseHelper(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-        bregister= (Button) findViewById(R.id.bregister);
-        etusername= (EditText) findViewById(R.id.etusername);
-        etpassword= (EditText) findViewById(R.id.etpassword);
-        etname= (EditText) findViewById(R.id.etname);
-
-        bregister.setOnClickListener(this);
-
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case (R.id.bregister):
-                break;
+    public void onSignUp(View v)
+    {
+
+        if (v.getId() == R.id.bregister)
+        {
+            EditText name = (EditText) findViewById(R.id.etname);
+            String namestr = name.getText().toString();
+
+            EditText email = (EditText) findViewById(R.id.etemail);
+            String emailstr = email.getText().toString();
+
+            EditText username = (EditText) findViewById(R.id.etusername);
+            String unamestr = username.getText().toString();
+
+            EditText password = (EditText) findViewById(R.id.etpassword);
+            String passwordstr = password.getText().toString();
+
+            EditText cpassword = (EditText) findViewById(R.id.etcpassword);
+            String password1str = cpassword.getText().toString();
+
+
+            if (!passwordstr.equals(password1str))
+                //check whether password are same !
+            {
+               Toast pass= Toast.makeText(Register.this, "password dont match!", Toast.LENGTH_LONG);
+                pass.show();
+            }
+            else
+            {
+            //insert deatails in database
+              contact c=new contact();
+                c.setName(namestr);
+                c.setEmail(emailstr);
+                c.setUname(unamestr);
+                c.setPass(passwordstr);
+
+               helper.insertContact(c);
+            }
         }
     }
 }
