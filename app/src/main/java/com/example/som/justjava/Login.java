@@ -32,7 +32,6 @@ public class Login extends AppCompatActivity {
                 Toast temp = Toast.makeText(Login.this, "Username and password dont match!", Toast.LENGTH_LONG);
                 temp.show();
             }
-
         }
         if (v.getId() == R.id.tvregisterlink) {
             Intent i = new Intent(Login.this, Register.class);

@@ -3,8 +3,10 @@ package com.example.som.justjava;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by som on 13-02-2016.
@@ -12,17 +14,16 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
 
-    private static final int DATABASE_VERSION=2;
+    private static final int DATABASE_VERSION=4;
     private static final String DATABASE_NAME="contacts.db";
     private static final String TABLE_NAME="contacts";
-    private static final String COLUMN_ID="id";
     private static final String COLUMN_NAME="name";
     private static final String COLUMN_EMAIL="email";
     private static final String COLUMN_UNAME="uname";
     private static final String COLUMN_PASS="pass";
+    private static final String TAG = "DatabaseHelper";
     SQLiteDatabase db;
-    private static final String TABLE_CREATE="CREATE TABLE "+TABLE_NAME+"("+COLUMN_ID+"INT PRIMARY KEY NOT NULL AUTOINCREMENT, "+COLUMN_NAME+" VARCHAR(255) NOT NULL, "
-            +COLUMN_EMAIL+" VARCHAR(255) NOT NULL, "+COLUMN_UNAME+" VARCHAR(255) NOT NULL, "+COLUMN_PASS+"VARCHAR(255) NOT NULL);";
+    private static final String TABLE_CREATE = " CREATE TABLE contacts( name  TEXT NOT NULL ,email TEXT NOT NULL , uname TEXT NOT NULL , pass TEXT NOT NULL ) ; ";
 
 
     public DatabaseHelper(Context context)
@@ -42,29 +43,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         ContentValues values=new ContentValues();
 
-        String query="select"+COLUMN_ID+ ","+COLUMN_NAME+ ","+COLUMN_EMAIL +","+COLUMN_UNAME +","+COLUMN_PASS + "from "+TABLE_NAME;
+        String query="SELECT *from contacts ";
+        Log.v(TAG, "error ovrt jhereeee 1st line ");
         Cursor cursor=db.rawQuery(query, null);
-        int count=cursor.getCount();
-
-
-        values.put(COLUMN_ID,count);
-        values.put(COLUMN_NAME,c.getName());
+        Log.v(TAG,"error ovrt jhereeee second of the line ");
+        values.put(COLUMN_NAME, c.getName());
         values.put(COLUMN_EMAIL,c.getEmail());
         values.put(COLUMN_UNAME,c.getUname());
         values.put(COLUMN_PASS, c.getPass());
 
-
-
         db.insert(TABLE_NAME, null, values);
+        Log.v(TAG, "INSERTED ");
         db.close();
-
-
-
-
-
     }
 
-public String searchPass(String uname)
+public String searchPass(String uname) throws SQLException
 {
     db=this.getReadableDatabase();
     String query="Select "+COLUMN_UNAME +", "+COLUMN_PASS+" from "+TABLE_NAME;
@@ -77,21 +70,20 @@ public String searchPass(String uname)
             a=cursor.getString(3);
 
             if (a.equals(uname))
-        {
-            b=cursor.getString(4);
-            break;
+            {
+                b=cursor.getString(4);
+                break;
+            }
         }
-          }
         while (cursor.moveToLast());
     }
-return  b;
+    return  b;
 }
 
     //
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    String Query ="DROP TABLE IF EXITS "+TABLE_NAME;
-        db.execSQL(Query);
-        this.onCreate(db);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        onCreate(db);
     }
 }

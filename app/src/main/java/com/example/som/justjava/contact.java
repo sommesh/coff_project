@@ -5,7 +5,6 @@ package com.example.som.justjava;
  */
 public class contact {
 
-    int id;
     String name,email,uname,pass;
 
     public void setName(String name)
@@ -15,14 +14,6 @@ public class contact {
     public String getName()
     {
         return this.name;
-    }
-    public void setId(int id)
-    {
-        this.id=id;
-    }
-    public int getId()
-    {
-        return this.id;
     }
     public void setEmail(String email)
     {

@@ -2,12 +2,14 @@ package com.example.som.justjava;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class Register extends Activity {
 
+    String TAG = "Register";
     DatabaseHelper helper=new DatabaseHelper(this);
 
     @Override
@@ -44,15 +46,17 @@ public class Register extends Activity {
                 pass.show();
             }
             else
+
             {
-            //insert deatails in database
-              contact c=new contact();
+                //insert the detailes in database
+                contact c = new contact();
                 c.setName(namestr);
                 c.setEmail(emailstr);
                 c.setUname(unamestr);
-                c.setPass(passwordstr);
+                c.setPass(password1str);
 
-               helper.insertContact(c);
+                helper.insertContact(c);
+                Log.v(TAG,"wowwwwwwwwwwwwwwwwwwwwwwie");
             }
         }
     }
