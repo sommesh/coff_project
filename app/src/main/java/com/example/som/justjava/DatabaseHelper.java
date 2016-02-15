@@ -21,7 +21,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_UNAME="uname";
     private static final String COLUMN_PASS="pass";
     SQLiteDatabase db;
-    private static final String TABLE_CREATE="create table contacts(_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, " + "name text not null,email text not null,uname text not null,pass text not null;";
+    private static final String TABLE_CREATE="CREATE TABLE "+TABLE_NAME+"("+COLUMN_ID+"INT PRIMARY KEY NOT NULL AUTOINCREMENT, "+COLUMN_NAME+" VARCHAR(255) NOT NULL, "
+            +COLUMN_EMAIL+" VARCHAR(255) NOT NULL, "+COLUMN_UNAME+" VARCHAR(255) NOT NULL, "+COLUMN_PASS+"VARCHAR(255) NOT NULL);";
 
 
     public DatabaseHelper(Context context)
@@ -38,9 +39,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void insertContact(contact c)
     {
         db= this.getWritableDatabase();
+
         ContentValues values=new ContentValues();
 
-        String query="select * from "+TABLE_NAME;
+        String query="select"+COLUMN_ID+ ","+COLUMN_NAME+ ","+COLUMN_EMAIL +","+COLUMN_UNAME +","+COLUMN_PASS + "from "+TABLE_NAME;
         Cursor cursor=db.rawQuery(query, null);
         int count=cursor.getCount();
 
@@ -49,27 +51,34 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(COLUMN_NAME,c.getName());
         values.put(COLUMN_EMAIL,c.getEmail());
         values.put(COLUMN_UNAME,c.getUname());
-        values.put(COLUMN_PASS,c.getPass());
+        values.put(COLUMN_PASS, c.getPass());
+
+
 
         db.insert(TABLE_NAME, null, values);
         db.close();
+
+
+
+
+
     }
 
 public String searchPass(String uname)
 {
     db=this.getReadableDatabase();
-    String query="Select "+COLUMN_UNAME +COLUMN_PASS+" from "+TABLE_NAME;
-    Cursor cursor=db.rawQuery(query,null);
+    String query="Select "+COLUMN_UNAME +", "+COLUMN_PASS+" from "+TABLE_NAME;
+    Cursor cursor= db.rawQuery(query,null);
     String a,b;
     b="not found";
     if (cursor.moveToFirst())
     {
         do{
-            a=cursor.getString(0);
+            a=cursor.getString(3);
 
             if (a.equals(uname))
         {
-            b=cursor.getString(1);
+            b=cursor.getString(4);
             break;
         }
           }
@@ -77,6 +86,8 @@ public String searchPass(String uname)
     }
 return  b;
 }
+
+    //
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
     String Query ="DROP TABLE IF EXITS "+TABLE_NAME;

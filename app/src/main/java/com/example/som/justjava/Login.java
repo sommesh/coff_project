@@ -26,12 +26,13 @@ public class Login extends AppCompatActivity {
 
             String password = helper.searchPass(str);
             if (pass.equals(password)) {
-                Intent i = new Intent(Login.this, contact.class);
+                Intent i = new Intent(Login.this,MainActivity.class);
                 startActivity(i);
             } else {
                 Toast temp = Toast.makeText(Login.this, "Username and password dont match!", Toast.LENGTH_LONG);
                 temp.show();
             }
+
         }
         if (v.getId() == R.id.tvregisterlink) {
             Intent i = new Intent(Login.this, Register.class);
