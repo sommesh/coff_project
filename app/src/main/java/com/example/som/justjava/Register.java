@@ -45,6 +45,7 @@ public class Register extends Activity {
                Toast pass= Toast.makeText(Register.this, "password dont match!", Toast.LENGTH_LONG);
                 pass.show();
             }
+
             else
 
             {
@@ -56,7 +57,7 @@ public class Register extends Activity {
                 c.setPass(password1str);
 
                 helper.insertContact(c);
-                Log.v(TAG,"wowwwwwwwwwwwwwwwwwwwwwwie");
+                Log.v(TAG, "wowwwwwwwwwwwwwwwwwwwwwwie you have now registered");
             }
         }
     }

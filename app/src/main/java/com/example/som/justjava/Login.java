@@ -18,14 +18,15 @@ public class Login extends AppCompatActivity {
 
 
     public void onButtonClick(View v) {
+        String nameie,passie;
         if (v.getId() == R.id.blogin) {
             EditText a = (EditText) findViewById(R.id.etusername);
-            String str = a.getText().toString();
+            nameie = a.getText().toString();
             EditText b = (EditText) findViewById(R.id.etpassword);
-            String pass = b.getText().toString();
+            passie = b.getText().toString();
 
-            String password = helper.searchPass(str);
-            if (pass.equals(password)) {
+            String pa = helper.searchPass(nameie);
+            if (nameie.equals(pa)) {
                 Intent i = new Intent(Login.this,MainActivity.class);
                 startActivity(i);
             } else {

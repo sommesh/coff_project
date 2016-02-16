@@ -44,42 +44,36 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues values=new ContentValues();
 
         String query="SELECT *from contacts ";
-        Log.v(TAG, "error ovrt jhereeee 1st line ");
         Cursor cursor=db.rawQuery(query, null);
-        Log.v(TAG,"error ovrt jhereeee second of the line ");
+
         values.put(COLUMN_NAME, c.getName());
         values.put(COLUMN_EMAIL,c.getEmail());
         values.put(COLUMN_UNAME,c.getUname());
         values.put(COLUMN_PASS, c.getPass());
 
         db.insert(TABLE_NAME, null, values);
-        Log.v(TAG, "INSERTED ");
+        Log.v(TAG, "INSERTED the data successfully  ");
         db.close();
     }
 
-public String searchPass(String uname) throws SQLException
-{
-    db=this.getReadableDatabase();
-    String query="Select "+COLUMN_UNAME +", "+COLUMN_PASS+" from "+TABLE_NAME;
-    Cursor cursor= db.rawQuery(query,null);
-    String a,b;
-    b="not found";
-    if (cursor.moveToFirst())
-    {
-        do{
-            a=cursor.getString(3);
-
-            if (a.equals(uname))
-            {
-                b=cursor.getString(4);
+public String searchPass(String uname) throws SQLException {
+    db = this.getReadableDatabase();
+    //String query =  "select uname, pass from "+TABLE_NAME;
+    Cursor cursor = db.rawQuery("select uname,pass from " + TABLE_NAME, null);
+    Log.v(TAG, "SELECTED NAME AND PASS  ");
+    String a, b,c;
+    c = "not found";
+    if (cursor != null) {
+        while (cursor.moveToNext()) {
+            a = cursor.getString(cursor.getColumnIndex(COLUMN_UNAME));
+            if (a.equals(uname)) {
+                b = cursor.getString(cursor.getColumnIndex(COLUMN_PASS));
                 break;
             }
         }
-        while (cursor.moveToLast());
     }
-    return  b;
+    return c;
 }
-
     //
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
