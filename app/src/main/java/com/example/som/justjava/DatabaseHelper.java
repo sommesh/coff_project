@@ -3,10 +3,11 @@ package com.example.som.justjava;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
+import java.sql.SQLException;
 
 /**
  * Created by som on 13-02-2016.
@@ -56,6 +57,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+
+
 public String searchPass(String uname) throws SQLException {
     db = this.getReadableDatabase();
     //String query =  "select uname, pass from "+TABLE_NAME;
@@ -72,8 +75,9 @@ public String searchPass(String uname) throws SQLException {
             }
         }
     }
-    return c;
+    return uname ;
 }
+
     //
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

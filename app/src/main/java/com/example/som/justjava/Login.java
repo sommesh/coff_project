@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.sql.SQLException;
+
 public class Login extends AppCompatActivity {
     DatabaseHelper helper = new DatabaseHelper(this);
 
@@ -17,7 +19,7 @@ public class Login extends AppCompatActivity {
     }
 
 
-    public void onButtonClick(View v) {
+    public void onButtonClick(View v) throws SQLException {
         String nameie,passie;
         if (v.getId() == R.id.blogin) {
             EditText a = (EditText) findViewById(R.id.etusername);

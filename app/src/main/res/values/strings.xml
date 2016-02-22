@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">Justjava</string>
+    <string name="app_name">
+        Justjava
+    </string>
+    <string name="esp">
+        In its pure form, espresso is more popular in Europe than America, particularly in Italy.
+        Though catching in America, derivatives and misconceptions are spreading like cream in coffee.
+        For instance, many hold the misconception that espresso is a dark, bitter to burnt-flavored roast of coffee.
+        In fact, espresso is not a roast at all; it is a method of preparing coffee. Espresso coffee is often blended from several roasts and varietals to
+        form a bold - not bitter flavor. The finely ground coffee is tightly packed or tamped into a “portafilter”; high-pressure water is then forced through
+        the grounds and extracted in small, concentrated amounts. Intensity is the key here.
+    </string>
+
+    <string name="capp">
+         A ‘traditional morning heart starter’. Steamed foamed velvety milk poured over one shot (1) of coffee oil extract made from 12gm of freshly ground
+        beans producing 38ml of essence.Finished by topping with foam and a sprinkle of chocolate powder. Served in a pre heated vitrified ceramic cup.
+        A cappuccino usually exceeds the height of the cup, making the foam visible above the side of the cup.
+        The foam on top of the cappuccino acts as an insulator and helps retain the heat of the liquid, allowing it to stay hotter longer."
+    </string>
+
+    <string name="amer">
+An Americano is an espresso-based drink designed to resemble coffee brewed in a drip filter,
+        considered popular in the United States of America.
+        This drink consists of a single or double-shot of espresso combined with up to four or five ounces of hot water in a two-demitasse cup.
+        It is important to note, that an Americano is created by adding the water to an already extracted espresso,
+        not by extracting extra water through a single espresso puck.
+        An Americano can be produced from lighter roasted coffees and roasts not generally associated with espresso, such as Ethiopian or Sumatran origins.
+        While some state that the Americano was created in Europe to deride the perceived American taste for weaker coffees,
+        it is more likely that it was developed in the United States city of Seattle.
+        A well-made Americano retains the subtle aroma of espresso with a lighter body and less bitterness.
+    </string>
+
 </resources>

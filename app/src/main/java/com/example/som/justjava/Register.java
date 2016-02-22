@@ -57,6 +57,8 @@ public class Register extends Activity {
                 c.setPass(password1str);
 
                 helper.insertContact(c);
+                Toast pass= Toast.makeText(Register.this, "Registered successfully", Toast.LENGTH_LONG);
+                pass.show();
                 Log.v(TAG, "wowwwwwwwwwwwwwwwwwwwwwwie you have now registered");
             }
         }
