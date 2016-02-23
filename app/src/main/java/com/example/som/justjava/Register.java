@@ -1,65 +1,76 @@
 package com.example.som.justjava;
 
+
 import android.app.Activity;
+import android.content.ContentValues;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Register extends Activity {
 
-    String TAG = "Register";
-    DatabaseHelper helper=new DatabaseHelper(this);
+/**
+ * Created by som on 23-02-2016.
+ */
+public class register extends Activity {
+
+    private EditText edt_scount, edt_spass;
+    private Button btn_cancel, btn_ok;
+
+    SQLiteOpenHelper helper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        helper = new DatabaseHelper(this);
+        helper.getWritableDatabase();
+
+        edt_scount = (EditText)findViewById(R.id.scount);
+        edt_spass = (EditText)findViewById(R.id.spassword);
+        btn_cancel = (Button)findViewById(R.id.cancel);
+        btn_ok = (Button)findViewById(R.id.ok);
+
+        btn_cancel.setOnClickListener(new cListener());
+        btn_ok.setOnClickListener(new okListener());
     }
 
-    public void onSignUp(View v)
-    {
+    class cListener implements View.OnClickListener{
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(register.this, login.class);
+            startActivity(intent);
+        }
+    }
 
-        if (v.getId() == R.id.bregister)
-        {
-            EditText name = (EditText) findViewById(R.id.etname);
-            String namestr = name.getText().toString();
-
-            EditText email = (EditText) findViewById(R.id.etemail);
-            String emailstr = email.getText().toString();
-
-            EditText username = (EditText) findViewById(R.id.etusername);
-            String unamestr = username.getText().toString();
-
-            EditText password = (EditText) findViewById(R.id.etpassword);
-            String passwordstr = password.getText().toString();
-
-            EditText cpassword = (EditText) findViewById(R.id.etcpassword);
-            String password1str = cpassword.getText().toString();
+    class okListener implements View.OnClickListener{
+        @Override
+        public void onClick(View v) {
+            try {
+                SQLiteDatabase sdb = helper.getWritableDatabase();
+                ContentValues values = new ContentValues();
+                values.put("count", edt_scount.getText().toString());
+                values.put("password", edt_spass.getText().toString());
 
 
-            if (!passwordstr.equals(password1str))
-                //check whether password are same !
-            {
-               Toast pass= Toast.makeText(Register.this, "password dont match!", Toast.LENGTH_LONG);
-                pass.show();
-            }
+                if(edt_scount.equals("") || edt_spass.equals(""))
+                    Toast.makeText(getApplicationContext(), "Fill the username and password！", Toast.LENGTH_SHORT).show();
+                else {
+                    sdb.insert("data", null, values);
+                    Toast.makeText(getApplicationContext(), "Registered", Toast.LENGTH_SHORT).show();
 
-            else
+                    Intent intent = new Intent(register.this, login.class);
+                    startActivity(intent);
+                }
 
-            {
-                //insert the detailes in database
-                contact c = new contact();
-                c.setName(namestr);
-                c.setEmail(emailstr);
-                c.setUname(unamestr);
-                c.setPass(password1str);
-
-                helper.insertContact(c);
-                Toast pass= Toast.makeText(Register.this, "Registered successfully", Toast.LENGTH_LONG);
-                pass.show();
-                Log.v(TAG, "wowwwwwwwwwwwwwwwwwwwwwwie you have now registered");
+            }catch (SQLiteException e){
+                Toast.makeText(getApplicationContext(), "Not Registered！", Toast.LENGTH_SHORT).show();
             }
         }
     }

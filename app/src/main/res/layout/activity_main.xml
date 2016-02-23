@@ -34,8 +34,8 @@ xmlns:tools="http://schemas.android.com/tools"
 
     <ImageView
         android:adjustViewBounds="true"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginBottom="1dp"
         android:scaleType="fitXY"
         android:src="@drawable/capuccino" />
@@ -60,8 +60,8 @@ xmlns:tools="http://schemas.android.com/tools"
 
     <ImageView
         android:adjustViewBounds="true"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/espresso" />
 
@@ -85,8 +85,8 @@ xmlns:tools="http://schemas.android.com/tools"
 
     <ImageView
         android:adjustViewBounds="true"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/americano" />
 
@@ -110,8 +110,8 @@ xmlns:tools="http://schemas.android.com/tools"
 
     <ImageView
         android:adjustViewBounds="true"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/caffe" />
 
@@ -121,6 +121,7 @@ xmlns:tools="http://schemas.android.com/tools"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:textStyle="italic"
+        android:onClick="caf"
         android:text="click here to know more " />
 
     <TextView
@@ -134,8 +135,8 @@ xmlns:tools="http://schemas.android.com/tools"
 
     <ImageView
         android:adjustViewBounds="true"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/cafe" />
 
@@ -145,6 +146,7 @@ xmlns:tools="http://schemas.android.com/tools"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:textStyle="italic"
+        android:onClick="cafe"
         android:text="click here to know more " />
 
     <TextView
@@ -159,7 +161,7 @@ xmlns:tools="http://schemas.android.com/tools"
     <ImageView
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/mocha" />
 
@@ -169,6 +171,7 @@ xmlns:tools="http://schemas.android.com/tools"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:textStyle="italic"
+        android:onClick="moc"
         android:text="click here to know more " />
 
     <TextView
@@ -182,8 +185,8 @@ xmlns:tools="http://schemas.android.com/tools"
 
     <ImageView
         android:adjustViewBounds="true"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/caramel" />
 
@@ -193,6 +196,7 @@ xmlns:tools="http://schemas.android.com/tools"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:textStyle="italic"
+        android:onClick="car"
         android:text="click here to know more " />
 </LinearLayout>
 </ScrollView>

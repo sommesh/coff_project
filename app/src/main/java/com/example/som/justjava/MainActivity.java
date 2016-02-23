@@ -29,6 +29,22 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Americano.class);
         startActivity(intent);
     }
+    public void caf(View view) {
+        Intent intent = new Intent(this, caffelat.class);
+        startActivity(intent);
+    }
+    public void cafe(View view) {
+        Intent intent = new Intent(this, lait.class);
+        startActivity(intent);
+    }
+    public void moc(View view) {
+        Intent intent = new Intent(this, mocaha.class);
+        startActivity(intent);
+    }
+    public void car(View view) {
+        Intent intent = new Intent(this, macho.class);
+        startActivity(intent);
+    }
 }
 
 
