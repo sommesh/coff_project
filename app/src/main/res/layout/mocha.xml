@@ -5,13 +5,17 @@
     <LinearLayout
         android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="15dp"
         android:background="@drawable/bac">
         <TextView
+            android:id="@+id/mocd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Description"
             android:textStyle="bold"
             android:textSize="30dp"
+            android:gravity="center"
+            android:textAllCaps="true"
             android:paddingBottom="5dp"
             android:textColor="#191970"/>
 
@@ -19,7 +23,54 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mocha"
-            android:textSize="20sp"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#050000"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="10dp" />
+        <TextView
+            android:id="@+id/moci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ingredient"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:textColor="#191970"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mochai"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#050000"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="10dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mochai"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/mocp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="procedure"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="30dp"
+            android:paddingBottom="5dp"
+            android:textColor="#191970"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mochaP"
+            android:textSize="15sp"
             android:textAllCaps="false"
             android:textColor="#050000"
             android:layout_marginBottom="16dp"

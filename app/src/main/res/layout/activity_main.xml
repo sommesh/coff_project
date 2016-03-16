@@ -20,19 +20,31 @@ xmlns:tools="http://schemas.android.com/tools"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.som.coffee.justjava">
 
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kafe"
+        android:textSize="40dp"
+        android:textAllCaps="true"
+        android:layout_gravity="center"/>
 
     <TextView
+        android:paddingTop="15dp"
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="1dp"
         android:text="Cappuccino"
         android:textAllCaps="true"
-        android:textColor="#d81515"
         android:textSize="30dp"
         android:textStyle="bold" />
 
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/cap"
+        android:onClick="cap"
+        android:padding="0dp"
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,16 +52,9 @@ xmlns:tools="http://schemas.android.com/tools"
         android:scaleType="fitXY"
         android:src="@drawable/capuccino" />
 
-    <Button
-        android:id="@+id/cap"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:textStyle="italic"
-        android:onClick="cap"
-        android:text="click here to know more " />
-
     <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Espresso"
@@ -58,23 +63,20 @@ xmlns:tools="http://schemas.android.com/tools"
         android:textSize="30dp"
         android:textStyle="bold" />
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/esp"
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
+        android:onClick="esp"
+        android:padding="0dp"
         android:src="@drawable/espresso" />
 
-    <Button
-        android:id="@+id/esp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:onClick="esp"
-        android:text="click here to know more "
-        android:textStyle="italic"/>
 
     <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Americano"
@@ -83,23 +85,19 @@ xmlns:tools="http://schemas.android.com/tools"
         android:textSize="30dp"
         android:textStyle="bold" />
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/ame"
+        android:onClick="a"
+        android:padding="0dp"
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/americano" />
 
-    <Button
-        android:id="@+id/ame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:textStyle="italic"
-        android:onClick="a"
-        android:text="click here to know more " />
-
     <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Caffe Latte"
@@ -108,23 +106,19 @@ xmlns:tools="http://schemas.android.com/tools"
         android:textSize="30dp"
         android:textStyle="bold" />
 
-    <ImageView
+    <ImageButton
+        android:onClick="caf"
+        android:id="@+id/caf"
+        android:padding="0dp"
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/caffe" />
 
-    <Button
-        android:id="@+id/caf"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:textStyle="italic"
-        android:onClick="caf"
-        android:text="click here to know more " />
-
     <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/text5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Cafe au Lait"
@@ -133,23 +127,19 @@ xmlns:tools="http://schemas.android.com/tools"
         android:textSize="30dp"
         android:textStyle="bold" />
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/cafe"
+        android:onClick="cafe"
+        android:padding="0dp"
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/cafe" />
 
-    <Button
-        android:id="@+id/cafe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:textStyle="italic"
-        android:onClick="cafe"
-        android:text="click here to know more " />
-
     <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/text6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Caf Mocha"
@@ -158,23 +148,18 @@ xmlns:tools="http://schemas.android.com/tools"
         android:textSize="30dp"
         android:textStyle="bold" />
 
-    <ImageView
+    <ImageButton
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@drawable/mocha" />
-
-    <Button
-        android:id="@+id/moc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:textStyle="italic"
-        android:onClick="moc"
-        android:text="click here to know more " />
+        android:padding="0dp"
+        android:src="@drawable/mocha"
+        android:onClick="moc"/>
 
     <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/text7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Caramel Macchiato"
@@ -183,20 +168,15 @@ xmlns:tools="http://schemas.android.com/tools"
         android:textSize="30dp"
         android:textStyle="bold" />
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/car"
+        android:padding="0dp"
+        android:onClick="car"
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/caramel" />
 
-    <Button
-        android:id="@+id/car"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:textStyle="italic"
-        android:onClick="car"
-        android:text="click here to know more " />
 </LinearLayout>
 </ScrollView>

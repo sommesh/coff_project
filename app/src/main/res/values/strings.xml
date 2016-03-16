@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">
-        Coffee Info
-    </string>
+kafe</string>
     <string name="esp">
         In its pure form, espresso is more popular in Europe than America, particularly in Italy.
         Though catching in America, derivatives and misconceptions are spreading like cream in coffee.
@@ -49,10 +48,7 @@ An Americano is an espresso-based drink designed to resemble coffee brewed in a 
         Caffè Mocha or café mocha, is an American invention and a variant of a caffe latte, inspired by the Turin coffee beverage Bicerin.
         The term "caffe mocha" is not used in Italy nor in France,where it is referred to as a "mocha latte". Like a caffe latte, it is typically one third
         espresso and two thirds steamed milk, but a portion of chocolate is added, typically in the form of sweet cocoa powder, although many varieties use
-        chocolate syrup. Mochas can contain dark or milk chocolate.Like cappuccino, café mochas contain the well-known milk froth on top, although
-        they are sometimes served with whipped cream instead. They are usually topped with a dusting of either cinnamon or cocoa powder.
-        Marshmallows may also be ded on top for flavor and decoration.A variant is white café mocha, made with white chocolate instead of milk or dark.
-        There are also variants ofthe drink that mix the two syrups; this mixture is referred to by several names, including black and white mocha, tan mocha,
+        chocolate syrup. Mochas can contain dark or milk chocolate.There are also variants ofthe drink that mix the two syrups; this mixture is referred to by several names, including black and white mocha, tan mocha,
         tuxedo mocha and zebra.
     </string>
     <string name="macho">
@@ -61,4 +57,92 @@ An Americano is an espresso-based drink designed to resemble coffee brewed in a 
         espresso-based drinks, a caffè macchiato is closer to a straight espresso, containing substantially less milk than a cappuccino . It can be used as an
         alternative to adding sugar to espresso, muting the bite of the espresso without adding sweetness.
     </string>
+<string name="capi"> \u2022 1/3 espresso \n\u2022
+        1/3 steamed milk\n\u2022
+         1/3 milk foam"</string>
+    <string name="caps">1. Prepare the required ammount of espresso in the bottom the cup.\n
+2. Prepare the milk .\n
+3. When the milk is ready to pour, start pouring from a little height roughly 10cm above the crema, into the center of the drink.  This makes the milk go through the crema rather than cover it.\n
+4. Then move the jug closer to the coffee until it is practically touching the cup, keeping the pour in the centre of the drink.  You will see the white of the milk starting to take over creating a circle.\n
+5. Just before the cup is full, gently flick the jug forwards.  This draws a line in the circle of white making a heart or apple shape.\n
+6. Cocoa powder can be used to decorate the top of the drink although in Italy a cappuccino is often served without any topping.  It is better to avoid other chocolate sprinkles as they tend to be sweet and hide the true flavour of the coffee.</string>
+    <string name="espi">\u2022 Ground espresso beans (1/4 oz. per shot)\n
+\u2022 Purified water</string>
+
+<string name="espp">"1. Research the different roasts and find what you like the best. Espresso can be made from a variety of roast levels. Roast preferences tend to vary by region.
+    Northern Italy prefers a medium roast and Southern Italy prefers a darker roast. In America, espresso roast is assumed to be dark because the major
+    companies that brought espresso (Starbucks) were influenced by cafes in southern Italy.\n
+    2. Get it fresh, it's better. Freshness is supremely important.
+    The closer it is to the roast date, the better. Ideally not over three weeks max since the roast date.\n
+    3. It is best to grind your own beans; but not
+    with a cheap, electric, blade coffee grinder. These can "burn" the coffee, and it is hard to get a consistent grind. Either use a good espresso grinder, or
+    buy fresh ground/roasted beans from a good source espresso shop. Ask how fresh the beans are, and have them ground while you are there. A good espresso
+    grind should be about the consistency of sugar. Too coarse, and the water runs through too quickly to pick up the proper elements.\n
+    4. Use purified water, without minerals or pollutants, heated to about 200F or 90C degrees. Never use boiling water. Boiling water stops the process
+    of creating good coffee dead. Not enough heat, and important components are not extracted from the coffee grind.\n
+    5. Use the right amount of ground coffee. This is about 7 grams (1/4 ounce dry volume) for a single shot (one ounce serving of espresso), or 14 grams
+    for a double.\n
+    6. It is about the grind and the pressure used with the tamper (assuming water temp is good) (the water is the easy part) you can compensate for too loose
+    a grind with more pressure and too fine a grind with less.\n
+    7. Pack the grinds into the portafilter or group (handle) of the espresso machine using a
+    tamper. A tamper is a flat object, approximately the size of the inside of the portafilter, used to compress the grounds to a density that will create
+    just the right amount of resistance for the water being forced through the grind. Usually that is around 30 pounds of pressure.\n
+    8. If everything above is right, it should take 5-10 seconds for the first 'reluctant hone' drops to appear and 20 to 25 seconds to create one or
+    two ounces respectively. Grind and tamp to achieve these parameters. Place your cup's under the group/brew basket (making sure this is seated securely).
+    Turned on your espresso machine. You should see a hazel brown cream, called crema or foam, appear at the surface of the coffee when its finished."
+</string>
+    <string name="amerv"> \u2022 The iced americano is made by combining espresso with cold water instead of hot water.\n
+\u2022 A lungo is made by extracting an espresso shot for longer giving more volume, but also extracting some bitter flavours.\n
+\u2022 A caffè crema is also made by extracting an espresso shot significantly longer than a lungo.\n
+\u2022 A red eye is made with drip coffee instead of hot water, and may be called a shot in the dark.
+    </string>
+    <string name="ameri"> \u2022 1 shot espresso coffee.\n
+ \u2022 Boiling water.\n
+ \u2022 Steamed milk.\n
+ \u2022 Raw sugar cube.</string>
+    <string name="amerp">
+        1. Have a latte mug, or coffee mug ready.\n
+        2. Pull a 3oz (or more if you like your drink stronger) espresso shot into a separate glass.\n
+        3. Pour about 3oz or so of hot water into the mug you plan to drink from.\n
+        4. Pour the espresso shot into the mug.\n
+        5. Enjoy your Americano!
+    </string>
+    <string name="lati">\u2022 Milk Foam\n\u2022 Steamed Milk\n\u2022 Espresso
+    </string>
+    <string name="latP">
+       1. Prepare the milk Pour milk into the pitcher so it is 1/3 to 1/2 full and submerge the thermometer. Place the steam wand in the milk so the tip is just below the surface.\n
+       2. Steam the milk Turn on the steam and watch the milk increase in volume as it heats and aerates. Turn off the steam when the thermometer reaches 140 degrees Fahrenheit, and set the pitcher aside. Never touch the steam wand or tip once you’ve turned on the steam – it’s hot! Be sure to hold the pitcher by the handle.\n
+        3.Fill the portafilter Remove the filter apparatus – or portafilter – from the espresso machine. Pour espresso into the portafilter.\n
+        4. Tamp the espresso Pack the grounds firmly with the tamper to keep water from rushing through too quickly. Many portafilters have a “fill line” ¬that the espresso should reach after it has been tamped.\n
+        5.  Pull the shot Replace and lock the portafilter and place the mug or latte bowl below the spout. Press the button to start the water. It should take about 25 seconds to “pull a shot” – that is, make 1 to 1 1/2 ounces of espresso.\n
+        6.  Finish the latte Flavor your latte if you’d like by adding 1/2 ounce of flavored syrup to the espresso. Pour steamed milk to fill your mug. Use the spoon to hold back the foam. Add sugar or sweetener to taste.
+    </string>
+    <string name="luiti"> \u2022 Steamed Milk\n\u2022 Brewed Coffee</string>
+<string name="luitP">
+1. Choose the right coffee beans. You want a bold, full-flavored bean to get the best drink. Fruity coffees, like many originating from Central America, often lose some flavor when mixed with the milk, and mild or light roast beans are not robust enough to provide the coffee taste you want.\n
+2. Brew up an extra strength cup of coffee. In order to avoid weakly flavored coffee, which may occur when the milk is added, you want a strong pot of coffee to start with.\n
+3. Warm 1 cup of milk. Scalding is just a culinary term for heating up the milk. You want to be careful not to foam the milk, just warm it up. Place it in a saucepan and heat it up slowly, on low heat, until it is just beginning to bubble and is hot to the touch.\n
+4. Pour the hot milk and coffee into your cup simultaneously. You want equal parts of milk and coffee, and you want to avoid stirring it up if possible to reduce any foaming.\n
+5. Serve the café au lait immediately. If you want to emphasize the French aspect, you should serve the coffee in a small bowl, as the French do.
+</string>
+    <string name="mochai">\u2022 Whipped Cream\n\u2022 Chocolate Syrup\n\u2022 Espresso</string>
+<string name="mochaP">
+   " 1. Heat the water.Different models may vary, but make sure you pour enough water into the tank of the machine so that the pump pipes are fully submerged. Turn on the power and the pump to pump water into the boiler.\n
+    2. Add the chocolate. Put a teaspoon of chocolate powder or 1oz chocolate syrup in the bottom of a coffee cup.\n
+3. Add the coffee. Put the correct amount of coffee (see Tips) in the filter basket and tap it to create a level surface. Use the tamper provided to compact the coffee. This will ensure the water doesn't flow through it too fast.\n
+4. Filter. Lock the group handle into the machine and put the coffee cup underneath. Turn on the dosage button. The coffee should take 14-18 seconds to filter through for a single espresso and 20-25 seconds for a double, after which you should turn off the dosage button.\n
+    5. Steam the milk. Milk can be steamed using the steam arm on your coffee machine.Turn the arm on full for 5 seconds before inserting it into the milk, as this will clean it through. If you want a frothy, cappuccino-style topping, insert the arm into the jug of milk so that the tip is just below the surface.\n
+   6. Add the milk. Tap the jug on a work surface and swirl the milk around to create a shiny surface with the consistency of thick custard. Carefully pour the milk on top of the chocolate espresso mixture and serve."
+
+</string>
+    <string name="macI">\u2022 Milk Foam\n\u2022 Espresso</string>
+    <string name="macP">1. Prepare the milk Pour two ounces of milk into the pitcher and submerge the thermometer. Place the steam wand in the milk so the tip is just below the surface.\n
+        2. Steam the milk Turn on the steam and watch the milk increase in volume as it heats and aerates. Turn off the steam when the thermometer reaches 140 degrees Fahrenheit. Never touch the steam wand or tip once you’ve turned on the steam it’s hot! Be sure to hold the pitcher by the handle.\n
+    3. Fill the portafilter Remove the filter apparatus – or portafilter – from the espresso machine. Pour ground espresso into the portafilter.\n
+        4. Tamp the espresso Pack the grounds firmly with the tamper to keep water from rushing through too quickly. Many portafilters have a “fill line” that the grounds should reach after they have been tamped.\n
+    5. Pull the shot Replace and lock the portafilter and place the demitasse cup below the spout. Press the button to start the water. It should take 25 seconds to make 1 to 1 1/2 ounces of espresso.\n
+    6. Add the foam Use the spoon to place a dollop or two of foamed milk on top of the espresso shot. Add sugar or sweetener to taste.
+    </string>
+    <string name="title_activity_maps">Map</string>
+
 </resources>
