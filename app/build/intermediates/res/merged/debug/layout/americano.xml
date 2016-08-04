@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="@drawable/bac">
+        <TextView
+            android:id="@+id/cd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:paddingBottom="5dp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textColor="#191970"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amer"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#050000"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="10dp" />
+        <TextView
+            android:id="@+id/ci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ingredient"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:paddingBottom="5dp"
+            android:textColor="#191970"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ameri"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#050000"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="10dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/americanoing"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/cp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="procedure"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="30dp"
+            android:paddingBottom="5dp"
+            android:textColor="#191970"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amerp"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#050000"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Variations"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:textColor="#191970"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amerv"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#050000"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+</ScrollView>

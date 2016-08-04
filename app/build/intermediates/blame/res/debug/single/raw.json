@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\somme_000\\Desktop\\coff_project-master\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\somme_000\\Desktop\\coff_project-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.4.0\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "G:\\AndroidStudioProjects\\coff_project-master\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "G:\\AndroidStudioProjects\\coff_project-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.4.0\\res\\raw\\gtm_analytics"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\somme_000\\Desktop\\coff_project-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\log.png",
+        "source": "C:\\Users\\somme_000\\Desktop\\coff_project-master\\app\\src\\main\\res\\mipmap-xxhdpi\\log.png"
+    },
+    {
+        "merged": "C:\\Users\\somme_000\\Desktop\\coff_project-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\pc.png",
+        "source": "C:\\Users\\somme_000\\Desktop\\coff_project-master\\app\\src\\main\\res\\mipmap-xxhdpi\\pc.png"
+    },
+    {
+        "merged": "G:\\AndroidStudioProjects\\coff_project-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\log.png",
+        "source": "G:\\AndroidStudioProjects\\coff_project-master\\app\\src\\main\\res\\mipmap-xxhdpi\\log.png"
+    }
+]
